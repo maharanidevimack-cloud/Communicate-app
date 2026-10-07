@@ -16,9 +16,9 @@ body {
     color: #1d1d1f;
 }
 
-/* Screen Switcher Control */
+/* Screen Switcher Control - Fixed with !important to prevent overlap */
 .screen {
-    display: none;
+    display: none !important;
     width: 100%;
     height: 100%;
     justify-content: center;
@@ -28,7 +28,7 @@ body {
     left: 0;
 }
 .screen.active {
-    display: flex;
+    display: flex !important;
 }
 
 /* 1. Splash Screen Styling */
@@ -520,4 +520,5 @@ body {
     cursor: pointer;
     flex-shrink: 0;
     box-shadow: 0 4px 12px rgba(0, 122, 255, 0.35);
-                                        }
+    }
+
